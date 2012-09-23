@@ -369,7 +369,7 @@ draw_point:
     call cmp16       ; DE < HL? iv < 30?
     jnc skip_point   ; If not, skip the point.
 
-    ; The "show" way of displaying a character.
+    ; The "slow" way of displaying a character.
     ; lhld iv
     ; lxi d, 78
     ; call mul16     ; HL = iv*78

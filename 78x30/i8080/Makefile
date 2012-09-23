@@ -15,6 +15,7 @@ clean:
 	-rm $(IMAGE).hex $(IMAGE).bin $(IMAGE).lst frames.asm
 	$(MAKE) -C generator clean
 	$(MAKE) -C rk86js clean
+	$(MAKE) -C pure clean
 
 generate:
 	$(MAKE) -C generator
